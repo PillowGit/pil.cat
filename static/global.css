@@ -1,0 +1,41 @@
+/* Cross-site configuration */
+
+:root {
+  --bg-color: #212121;
+  --font-color: #E2E2E2;
+  --complement-blue: #5C95FF;
+  --complement-red: #D62828;
+}
+
+@font-face {
+  font-family: "Jost", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wght' 400;
+}
+
+/* General text sizings */
+
+.title-text {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+.xl-text {
+  font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+}
+.large-text {
+  font-size: clamp(1.25rem, 3.25vw, 1.75rem);
+}
+.small-text {
+  font-size: clamp(1rem, 2.75vw, 1.25rem);
+}
+.xs-text {
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: Jost, sans-serif;
+}
