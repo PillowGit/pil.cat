@@ -121,6 +121,10 @@
     width: 100%;
     text-align: center;
   }
+  .zelle > div > span[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+  }
 
   /* Debug styles 
   .cont {
