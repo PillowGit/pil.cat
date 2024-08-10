@@ -122,7 +122,7 @@
     text-align: center;
   }
 
-  /* Debug styles */
+  /* Debug styles 
   .cont {
     border: 1px solid red;
   }
@@ -135,4 +135,5 @@
   div {
     border: 1px solid red;
   }
+  */
 </style>
