@@ -1,5 +1,9 @@
-<script>
+<script lang="ts">
   //https://venmo.com/u/Aescart
+  function copy_to_clipboard(text: string) {
+    navigator.clipboard.writeText(text);
+    alert("Copied to clipboard!");
+  }
 </script>
 
 <title>Donate to Angelica</title>
@@ -13,7 +17,26 @@
     </div>
   </a>
 
-  <span class="footer">Made by Esteban</span>
+  <!-- Should copy to clipboard on click -->
+  <div
+    class="zelle"
+    role="button"
+    aria-pressed="false"
+    tabindex="0"
+    on:click={() => copy_to_clipboard("3232362434")}
+    on:keydown={(e) => {
+      if (e.key === "Enter") {
+        copy_to_clipboard("3232362434");
+      }
+    }}
+  >
+    <div>
+      <img src="/icons/zelle.png" alt="Zelle" />
+      <span>(323) 236 - 2434</span>
+    </div>
+  </div>
+
+  <span class="footer">Website made by Esteban<br />(Click the buttons)</span>
 </div>
 
 <style>
@@ -36,6 +59,7 @@
   .footer {
     font-size: clamp(0.75rem, 3vw, 1.25rem);
     color: color-mix(in srgb, var(--font-color) 75%, transparent 25%);
+    text-align: center;
   }
 
   /* Venmo styling */
@@ -68,7 +92,37 @@
     text-align: center;
   }
 
-  /* Debug styles 
+  /* Zelle styling */
+  .zelle {
+    width: 100%;
+    height: 10%;
+    border-radius: 1rem;
+    background-color: #6c1cd3;
+    border: 0.15rem solid color-mix(in srgb, #6c1cd3 50%, black 50%);
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    font-style: bold;
+  }
+  .zelle > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .zelle > div > img {
+    height: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+  }
+  .zelle > div > span {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Debug styles */
   .cont {
     border: 1px solid red;
   }
@@ -81,5 +135,4 @@
   div {
     border: 1px solid red;
   }
-*/
 </style>
