@@ -10,6 +10,7 @@
 <style>
   html {
     overflow: scroll;
+    color: var(--font-color);
   }
   ::-webkit-scrollbar {
     width: 0px;
