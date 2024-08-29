@@ -130,7 +130,7 @@
     margin-bottom: 3vh;
   }
   .desc-title {
-    text-align: center;
+    text-align: left;
     width: 100%;
     font-weight: bold;
   }
@@ -190,8 +190,7 @@
   }
   .social-sep {
     background-color: var(--dark-grey);
-    margin-top: 5%;
-    height: 90%;
+    height: 100%;
     width: 25%;
   }
   .soc-text {

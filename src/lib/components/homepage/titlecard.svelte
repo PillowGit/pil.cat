@@ -163,7 +163,7 @@
     width: 100%;
   }
   .desc-title {
-    text-align: center;
+    text-align: left;
     width: 100%;
     font-weight: bold;
   }
