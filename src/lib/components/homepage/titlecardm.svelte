@@ -190,6 +190,7 @@
   }
   .social-sep {
     background-color: var(--dark-grey);
+    margin-top: 5%;
     height: 90%;
     width: 25%;
   }
