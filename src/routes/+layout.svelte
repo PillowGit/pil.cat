@@ -2,7 +2,7 @@
   <div class="page">
     <div class="padding"></div>
     <div class="container">
-      <slot/>
+      <slot />
     </div>
   </div>
 </html>
@@ -11,6 +11,7 @@
   html {
     overflow: scroll;
     color: var(--font-color);
+    font-family: "Nunito", sans-serif;
   }
   ::-webkit-scrollbar {
     width: 0px;
@@ -42,3 +43,4 @@
     width: clamp(300px, 50%, 1400px);
   }
 </style>
+
