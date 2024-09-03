@@ -80,7 +80,11 @@
         }}
       >
         <div class="soc-align-left">
-          <img src={social.icon} alt={social.name} class="icon"/>
+          <img
+            src={social.icon}
+            alt={social.name}
+            class={social.name === "Github" ? "icon github-invert" : "icon"}
+          />
         </div>
         <div class="social-sep"></div>
         <div class="soc-align-right">
@@ -186,6 +190,9 @@
   .icon {
     aspect-ratio: 1/1;
     height: 2rem;
+  }
+  .github-invert {
+    filter: invert(1);
   }
   .social-sep {
     background-color: var(--dark-grey);

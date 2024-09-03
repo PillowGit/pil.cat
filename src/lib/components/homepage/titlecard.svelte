@@ -72,7 +72,7 @@
   <div class="socials">
     {#each socials as social}
       <div
-        class="social"
+        class={"social"}
         role="button"
         aria-pressed="false"
         tabindex="0"
@@ -83,7 +83,11 @@
           }
         }}
       >
-        <img src={social.icon} alt={social.name} class="icon"/>
+        <img
+          src={social.icon}
+          alt={social.name}
+          class={social.name === "Github" ? "icon github-invert" : "icon"}
+        />
         <div class="social-sep"></div>
         <span class="xs-text">{social.user}</span>
       </div>
@@ -117,9 +121,12 @@
     border: 1px solid var(--dark-grey);
     background-color: color-mix(in srgb, var(--dark-grey) 15%, transparent 85%);
   }
-  .social > img {
+  .icon {
     aspect-ratio: 1/1;
     width: 10%;
+  }
+  .github-invert {
+    filter: invert(1);
   }
   .social-sep {
     background-color: var(--dark-grey);
