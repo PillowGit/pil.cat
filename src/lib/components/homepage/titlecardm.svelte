@@ -108,7 +108,6 @@
   }
   .subtitle {
     text-align: left;
-    margin-top: -0.5vh;
     margin-bottom: 2vh;
     height: 3vh;
     width: 100%;
