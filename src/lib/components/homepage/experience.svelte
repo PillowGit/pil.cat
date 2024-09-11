@@ -17,7 +17,7 @@
   let choice: number = entries.length - 1;
 
   // Gather a list of years to display
-  const start_yr: number = 2022;
+  const start_yr: number = 2021;
   let year_nums = Array.from({length: new Date().getFullYear() - start_yr + 1}, (_, i) => start_yr + i);
 
   // Store the elements for each year to render the timeline

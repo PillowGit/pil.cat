@@ -1,13 +1,31 @@
 {
   "entries": [
     {
+      "start_yr": 2021,
+      "end_yr": 2024,
+      "name": "CSUF Student",
+      "title": "Student",
+      "date": "August 2021 - Current",
+      "company": "CSUF",
+      "desc": "Student at California State University, Fullerton. I am pursuing a Bachelor's degree in Computer Science."
+    },
+    {
       "start_yr": 2023,
       "end_yr": 2024,
       "name": "Supplemental Instruction",
       "title": "Supplemental Instructor",
-      "date": "December 2024 - Current",
+      "date": "December 2023 - Current",
       "company": "CSUF",
       "desc": "I offer supplemental lessons to students at CSUF for our Intro to Computer Science and Data Structures courses."
+    },
+    {
+      "start_yr": 2023,
+      "end_yr": 2024,
+      "name": "ACM Board",
+      "title": "Algo Board Member, Vice President, Fullyhacks Co-Director",
+      "date": "January 2023 - Current",
+      "company": "ACM @ CSUF",
+      "desc": "I was on the Algo Board teaching students about algorithms and data structures. I am currently the Vice President of ACM. I will be one of the co-directors for Fullyhacks 2025, our annual hackathon."
     },
     {
       "start_yr": 2024,
