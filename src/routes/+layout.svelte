@@ -32,7 +32,6 @@
   }
   .padding {
     width: 100%;
-    height: clamp(0px, 10%, 100px);
   }
   .container {
     display: flex;

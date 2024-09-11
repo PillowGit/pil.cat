@@ -11,6 +11,7 @@
   <Experience/>
 </div>
 <div class="mobile">
+  <div class="mobile-padding"></div>
   <TitleCardM/>
   <div class="section-space"></div>
   <ExperienceM/>
@@ -26,12 +27,19 @@
   .mobile {
     display: none;
   }
+  .mobile-padding {
+    display: none;
+  }
   @media (max-device-width: 1000px) {
     .pc {
       display: none;
     }
     .mobile {
       display: block;
+    }
+    .mobile-padding {
+      display: block;
+      height: 5vh;
     }
   }
 </style>
